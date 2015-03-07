@@ -54,7 +54,7 @@
 		</dependency>
 	</dependencies>
 	<build>
-		<finalName>one</finalName>
+		<finalName>example1</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
@@ -66,9 +66,9 @@
 				<version>2.2</version>
 				<configuration>
 					<path>/${project.build.finalName}</path>
-					<username>admin</username>
-					<password>password</password>
-					<url>http://localhost:8080/manager/text</url>
+					<username>${tomcat-username}</username>
+					<password>${tomcat-password}</password>
+					<url>${tomcat-url}</url>
 				</configuration>
 			</plugin>
 		</plugins>
